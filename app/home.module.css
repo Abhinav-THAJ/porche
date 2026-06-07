@@ -153,12 +153,17 @@
   .quoteText {
     font-size: 1.8rem;
   }
-  .exploreGrid {
+  .featuresGrid {
     grid-template-columns: 1fr;
+    grid-auto-rows: 350px;
     padding: 5rem 5%;
+    gap: 1rem;
+  }
+  .itemLarge, .itemSmall {
+    grid-column: span 1;
   }
   .gridItem {
-    height: 350px;
+    height: 100%;
   }
   .homeCta {
     height: 50vh;
