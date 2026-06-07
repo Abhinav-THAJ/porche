@@ -3,6 +3,7 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import SmoothScrolling from "../components/SmoothScrolling";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
@@ -20,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${outfit.variable}`}>
-        <NavBar />
-        {children}
-        <Footer />
+        <SmoothScrolling>
+          <NavBar />
+          {children}
+          <Footer />
+        </SmoothScrolling>
       </body>
     </html>
   );
