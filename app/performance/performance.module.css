@@ -1,0 +1,152 @@
+.container {
+  background-color: var(--bg-primary);
+  min-height: 300vh;
+  color: white;
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 7rem;
+  font-family: var(--font-outfit);
+  font-weight: 600;
+  background: linear-gradient(180deg, #FFF 0%, #AAA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.8));
+}
+
+.counters {
+  padding: 10rem 10%;
+  background: var(--bg-secondary);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.counterNum {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #D5001C;
+  font-family: var(--font-outfit);
+}
+
+.counterLabel {
+  font-size: 1.2rem;
+  color: var(--accent-silver);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.panel {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.panel.reverse {
+  flex-direction: row-reverse;
+}
+
+.panelImg {
+  flex: 1;
+  position: relative;
+  height: 100%;
+}
+
+.panelContent {
+  flex: 1;
+  padding: 5rem;
+}
+
+.panelTitle {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #FFF;
+}
+
+.panelDesc {
+  font-size: 1.5rem;
+  color: var(--accent-silver);
+  line-height: 1.6;
+}
+
+.ending {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.endingTitle {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.ctaBtn {
+  background: #D5001C;
+  color: white;
+  padding: 1.2rem 3rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+  .counters {
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 5%;
+  }
+  .counterNum {
+    font-size: 3rem;
+  }
+  .panel {
+    flex-direction: column !important;
+    height: auto;
+  }
+  .panelImg {
+    width: 100%;
+    height: 300px;
+  }
+  .panelContent {
+    padding: 3rem 5%;
+  }
+  .panelTitle {
+    font-size: 2.5rem;
+  }
+  .panelDesc {
+    font-size: 1.2rem;
+  }
+  .endingTitle {
+    font-size: 3rem;
+  }
+}

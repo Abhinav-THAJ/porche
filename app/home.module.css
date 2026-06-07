@@ -132,7 +132,40 @@
 }
 
 .buildBtn:hover {
-  background: #B00015;
+  background: #fff;
+  color: #000;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+  .heroOverlay {
+    padding-top: 15vh;
+  }
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+  .heroSubtitle {
+    font-size: 1.5rem;
+  }
+  .quoteSection {
+    padding: 0 5%;
+  }
+  .quoteText {
+    font-size: 1.8rem;
+  }
+  .exploreGrid {
+    grid-template-columns: 1fr;
+    padding: 5rem 5%;
+  }
+  .gridItem {
+    height: 350px;
+  }
+  .homeCta {
+    height: 50vh;
+  }
+  .ctaContent h2 {
+    font-size: 3rem;
+  }
 }
 
 /* Premium Footer */

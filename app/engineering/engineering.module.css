@@ -169,3 +169,43 @@
   text-transform: uppercase;
   color: #D5001C;
 }
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+  .introText {
+    padding: 5rem 5%;
+  }
+  .introText p {
+    font-size: 1.2rem;
+  }
+  .blueprintSticky {
+    align-items: flex-start;
+    padding-top: 20vh;
+  }
+  .blueprintImageWrapper {
+    width: 95%;
+  }
+  .callout {
+    width: 250px;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  .callout h3 {
+    font-size: 1.1rem;
+  }
+  .callout h3 span {
+    font-size: 1.2rem;
+  }
+  .quoteSection {
+    padding: 0 5%;
+  }
+  .quoteText {
+    font-size: 1.5rem;
+  }
+  .quoteMark {
+    font-size: 4rem;
+  }
+}

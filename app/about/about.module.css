@@ -282,3 +282,53 @@
   font-size: 1.5rem;
   color: rgba(255,255,255,0.8);
 }
+
+.aboutFooter h2 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+  .legacyContent p {
+    font-size: 1.5rem;
+  }
+  .timelineItem {
+    flex-direction: column !important;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+  .yearBlock {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  .yearBlock h3 {
+    font-size: 3rem;
+  }
+  .timelineLine {
+    left: 20px;
+  }
+  .timelineContent {
+    width: 100%;
+    padding: 1rem;
+  }
+  .timelineImage {
+    height: 200px;
+  }
+  .stackContent {
+    padding: 5rem 5%;
+  }
+  .stackContent h2 {
+    font-size: 2.5rem;
+  }
+  .stackGrid {
+    grid-template-columns: 1fr;
+  }
+  .aboutFooter h2 {
+    font-size: 3rem;
+  }
+}
