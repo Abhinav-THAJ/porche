@@ -224,4 +224,15 @@
   .textOverlayRight p {
     font-size: 1rem;
   }
+
+  .ctaGroup {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .primaryBtn, .secondaryBtn {
+    width: 100%;
+    max-width: 300px;
+  }
 }
